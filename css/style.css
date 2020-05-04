@@ -5,4 +5,32 @@ body{
 .navbar{
     border-bottom: 3px #008ed6 solid ;
     opacity: 0.8;
+} 
+#home-section{
+    background: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+#home-section .dark-overlay{
+    position: relative;
+   /** since i want the dark overlay to reach upto the full screen despit it being inside a parent div(home-section) im giving a value of 0 to top and left**/
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;/** it should be the same height of the min-height of the parent div (home section)**/
+    background-color: rgba(0,0,0,0.7);
+}
+#home-section .home-inner{
+    padding: 150px;
+}
+#home-section .card-form{
+    opacity: 0.8;
+}
+#home-section .fas{
+    color: #008ed6;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
 }
